@@ -97,7 +97,7 @@ def bench(
 
         with open(f"outputs/{engine.name}/{id}.jsonl", "w") as f:
             f.write(
-                f"{dumps({"engine": engine.name, "engine_config": asdict(engine.config)})}\n"
+                f"{dumps({'engine': engine.name, 'engine_config': asdict(engine.config)})}\n"
             )
 
             for outputs in all_outputs:
